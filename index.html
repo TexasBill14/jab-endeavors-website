@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JAB Endeavors</title>
+  <!-- Import Montserrat font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -12,20 +14,20 @@
     }
     body, html {
       height: 100%;
-      font-family: Arial, sans-serif;
+      width: 100%;
+      font-family: 'Montserrat', sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-image: url('background.jpg');
+      background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      color: white;
+      color: black;
     }
     .container {
       text-align: center;
-      background-color: rgba(0, 0, 0, 0.5); /* Adds a subtle overlay for better text contrast */
       padding: 20px;
-      border-radius: 8px;
+      max-width: 600px;
+      width: 90%;
     }
     .logo {
       max-width: 150px;
@@ -35,14 +37,16 @@
       font-size: 24px;
       margin-bottom: 10px;
       font-weight: bold;
+      color: black; /* Sets the title text to black */
     }
     .contact {
-      margin-top: 20px;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
       font-size: 18px;
-      color: #ADD8E6;
     }
     .contact a {
-      color: #ADD8E6;
+      color: #ffffff;
       text-decoration: none;
     }
   </style>
@@ -50,10 +54,10 @@
 <body>
   <div class="container">
     <img src="logo.png" alt="JAB Endeavors Logo" class="logo">
-    <h1 class="title">Creating Clean, Sustainable Solutions</h1>
-    <p class="contact">
-      <a href="mailto:youremail@jabendeavors.com">Contact Us</a>
-    </p>
+    <h1 class="title">Creating Clean, Sustainable CPG Solutions</h1>
   </div>
+  <p class="contact">
+    <a href="mailto:bill@jabendeavors.com">Contact Us</a>
+  </p>
 </body>
 </html>
